@@ -1,0 +1,101 @@
+:root{
+    --c1: #7b9fe2;
+    --c2: #394053;
+    --c3: #4e4c55;
+    --c4: #7fbeaf;
+    --c5: #c8e4cf;
+    
+
+    
+
+    --header_height: 200px;
+    --nav_width: 150px;
+
+}
+
+html{
+    background-color: var(--c1);
+}
+
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position:static;
+    display:flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: var(--c1); 
+    color: var(--c5);
+    
+    width: 100%;
+    height: var(--header_height);
+    
+    top: 0px;
+    left: 0px;
+
+    z-index: 10;
+
+    display:flex;
+    position:fixed;
+    justify-content:flex-start;
+}
+
+
+nav{
+    background-color: var(--c2);
+    color: var(--c5);
+
+    height: 100%;
+    width: var(--nav_width);
+
+    top:var(--header_height);
+    left: 0px;
+    
+    z-index: 9;
+
+    position:fixed;
+    display:flex;
+    flex-direction: column;
+    justify-content:baseline;
+}
+
+main{
+    background-color: var(--c3);
+    color: var(--c5);
+
+    width: 100%;
+
+    top:var(--header_height);
+    left:var(--nav_width);
+
+    position:absolute;
+    display:flex;
+}
+
+article{
+    position:static;
+    padding-left: 5%;
+}
+
+a{
+    color: var(--c4);
+}
+
+p{
+    white-space: pre-wrap;
+    font-size:18px;
+}
+
+h1{
+    color: var(--c5);
+    font-size: 48px;
+}
+
+.profile_pic{
+    padding-left: 5%;
+}
+
+.header_title{
+    padding: 5%;
+}
